@@ -4,7 +4,7 @@
 > of [campsite-manage](https://github.com/zsyayo112/campsite-manage)
 > serving a real forest camp business.
 
-[![CI](https://github.com/zsyayo112|g/campsite-os/actions/workflows/ci.yml/badge.svg)](https://github.com/<your-handle>/campsite-os/actions/workflows/ci.yml)
+[![CI](https://github.com/zsyayo112|g/campsite-os/actions/workflows/ci.yml/badge.svg)](https://github.com/zsyayo112|g/campsite-os/actions/workflows/ci.yml)
 
 ## Why this exists
 
