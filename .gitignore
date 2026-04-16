@@ -33,3 +33,14 @@ coverage/
 # Misc
 *.pem
 .cache/
+
+# env
+.env
+.env.local
+.env.*.local
+apps/*/.env
+apps/*/.env.local
+packages/*/.env
+
+# docker volumes (defensive)
+docker/postgres/data/

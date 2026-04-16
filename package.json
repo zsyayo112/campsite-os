@@ -1,6 +1,7 @@
 {
   "name": "campsite-os",
   "version": "0.0.0",
+  "type": "module",
   "private": true,
   "description": "Full-stack AI-powered camp operations platform",
   "engines": {
@@ -16,7 +17,13 @@
     "typecheck": "turbo run typecheck",
     "clean": "turbo run clean && rm -rf node_modules",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md,yml,yaml}\"",
-    "prepare": "husky"
+    "prepare": "husky",
+    "db:up": "docker compose -f docker-compose.dev.yml up -d",
+    "db:down": "docker compose -f docker-compose.dev.yml down",
+    "db:logs": "docker compose -f docker-compose.dev.yml logs -f",
+    "db:reset": "docker compose -f docker-compose.dev.yml down -v && docker compose -f docker-compose.dev.yml up -d",
+    "db:psql": "docker exec -it campsite-os-postgres psql -U campsite -d campsite_os",
+    "db:redis-cli": "docker exec -it campsite-os-redis redis-cli"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.5.0",
